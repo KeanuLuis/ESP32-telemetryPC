@@ -13,4 +13,4 @@ Sistema Operativo- Windows 10/11|
 
 
 
-Para la interfaz y la experiencia del usuari, apliqué los principios sólidos de interacción humano-computadora, la prioridad fue la visibilidad del estado dels sistema a un simple vistazo.
+Para la interfaz y la experiencia del usuaro, apliqué los principios sólidos de interacción humano-computadora, la prioridad fue la visibilidad del estado del sistema a un simple vistazo.

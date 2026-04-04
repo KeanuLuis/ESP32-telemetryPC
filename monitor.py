@@ -19,8 +19,7 @@ def read_lhm():
     global cpu_temp, gpu_temp
 
     try:
-        data = requests.get("http://YOUR_MACHINE_IP:8085/data.json").json()
-
+        data = requests.get("http://127.0.0.1:8085/data.json").json()
         cpu_temp = 0
         gpu_temp = 0
 

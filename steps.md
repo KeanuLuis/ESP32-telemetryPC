@@ -67,17 +67,8 @@ Abre Arduino IDE, ve a Programa > Incluir Librería > Administrar Bibliotecas...
 
 <pre>
 Adafruit GFX Library
-
-
-
 Adafruit SSD1306
-
-
-
 ArduinoJson (Asegúrate de que sea la versión 7 o superior)
-
-
-
 WiFiManager (Por tzapu)
 
 </pre>
@@ -109,12 +100,9 @@ Conecta tu ESP32-C3 por USB.
 
 
 Recuerda cambiar las siguientes líneas del código con su respectivos datos:
-</pre>
-
+<pre>
 const char\* ssid = "YOUR\_WIFI";
-
 const char\* password = "YOUR\_WIFI\_PASSWORD";
-
 String serverName = "http://YOUR\_LOCAL\_MACHINE\_IP:5000/stats"; 
 </pre>
 

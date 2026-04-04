@@ -37,9 +37,9 @@ Ve a la carpeta important de este repositorio y revisa las capturas de pantalla 
 Tu PC necesita algunas librerías para poder procesar y enviar los datos. Abre tu terminal (PowerShell o CMD) y copia y pega el siguiente comando:
 
 
-
+<pre>
 ###### pip install flask psutil requests
-
+</pre>
 
 
 (Nota: Si el comando anterior te da error, intenta usar py -m pip install flask psutil requests).
@@ -50,7 +50,7 @@ Tu PC necesita algunas librerías para poder procesar y enviar los datos. Abre t
 
 ##### 3\. Conectar la Pantalla OLED al ESP32-C3
 
-Utiliza cables jumper para conectar tu pantalla OLED al microcontrolador. Sigue el diagrama visual que se encuentra en la imagen Esp32-c3.png (ubicada en los archivos del proyecto).
+Utiliza cables jumper para conectar tu pantalla OLED al microcontrolador. Sigue el diagrama visual que se encuentra en la imagen en README.md
 
 
 
@@ -65,7 +65,7 @@ Asegúrate de que los pines SDA y SCL coincidan exactamente con el diagrama.
 Abre Arduino IDE, ve a Programa > Incluir Librería > Administrar Bibliotecas... e instala las siguientes librerías exactas (puedes ver la imagen librerias\_Arduiono.png como referencia):
 
 
-
+<pre>
 Adafruit GFX Library
 
 
@@ -80,6 +80,7 @@ ArduinoJson (Asegúrate de que sea la versión 7 o superior)
 
 WiFiManager (Por tzapu)
 
+</pre>
 
 
 #### 5\. Ejecutar el Servidor Python
@@ -87,8 +88,9 @@ WiFiManager (Por tzapu)
 Con Libre Hardware Monitor abierto en segundo plano, es hora de encender nuestro puente de datos. Abre tu terminal en la carpeta donde descargaste los archivos del proyecto y ejecuta el script con este comando:
 
 
-
+<pre>
 ##### python monitor.py
+</pre>
 
 
 
@@ -107,12 +109,14 @@ Conecta tu ESP32-C3 por USB.
 
 
 Recuerda cambiar las siguientes líneas del código con su respectivos datos:
+</pre>
 
 const char\* ssid = "YOUR\_WIFI";
 
 const char\* password = "YOUR\_WIFI\_PASSWORD";
 
 String serverName = "http://YOUR\_LOCAL\_MACHINE\_IP:5000/stats"; 
+</pre>
 
 
 

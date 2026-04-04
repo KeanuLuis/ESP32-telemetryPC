@@ -38,7 +38,7 @@ Tu PC necesita algunas librerías para poder procesar y enviar los datos. Abre t
 
 
 <pre>
-###### pip install flask psutil requests
+pip install flask psutil requests
 </pre>
 
 
@@ -89,7 +89,7 @@ Con Libre Hardware Monitor abierto en segundo plano, es hora de encender nuestro
 
 
 <pre>
-##### python monitor.py
+python monitor.py
 </pre>
 
 

@@ -19,28 +19,40 @@ def read_lhm():
     global cpu_temp, gpu_temp
 
     try:
-        data = requests.get("http://localhost:8085/data.json").json()
+        data = requests.get("http://192.168.56.1:8085/data.json").json()
+
         cpu_temp = 0
         gpu_temp = 0
 
-        def search(node):
+        def search(node, current_hardware=""):
             global cpu_temp, gpu_temp
+
+            
+            text = node.get("Text", "").lower()
+            image = node.get("ImageURL", "").lower()
+
+            if "cpu" in image or "intel" in text or "amd" in text or "ryzen" in text:
+                current_hardware = "CPU"
+            elif "nvidia" in image or "ati" in image or "radeon" in text or "rtx" in text or "gtx" in text:
+                current_hardware = "GPU"
+
+            value_raw = str(node.get("Value", "")).upper() 
+            
+            if "°C" in value_raw:
+                clean_value = value_raw.replace(" °C", "").replace(",", ".")
+                temp = float(clean_value)
+
+                if current_hardware == "CPU" and cpu_temp == 0:
+                    cpu_temp = temp
+                    print(f"✔️ CPU Temp Success: {cpu_temp}°C (sensor name: {node.get('Text')})")
+                
+                elif current_hardware == "GPU" and gpu_temp == 0:
+                    gpu_temp = temp
+                    print(f"✔️ GPU Temp Success: {gpu_temp}°C (sensor name: {node.get('Text')})")
 
             if "Children" in node:
                 for child in node["Children"]:
-                    search(child)
-
-            if "Text" in node and "Value" in node:
-                text = node["Text"]
-                value = str(node["Value"])
-
-                if "°C" in value:
-                    temp = float(value.replace(" °C", "").replace(",", "."))
-
-                    if "CPU" in text and cpu_temp == 0:
-                        cpu_temp = temp
-                    if "GPU" in text:
-                        gpu_temp = temp
+                    search(child, current_hardware)
 
         search(data)
 

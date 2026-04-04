@@ -74,7 +74,7 @@ void loop() {
           storage = doc["storage"].as<int>();
           uptime = doc["uptime"].as<String>();
         } else {
-          Serial.print("Error leyendo JSON: ");
+          Serial.print("Error JSON: ");
           Serial.println(error.c_str());
         }
       }

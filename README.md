@@ -80,8 +80,8 @@ Conecta tu ESP32-C3 mini por USB.
 Recuerda cambiar las siguientes líneas del código con su respectivos datos:
 
 ```C++
-const char\* ssid = "YOUR\_WIFI";
-const char\* password = "YOUR\_WIFI\_PASSWORD";
+const char* ssid = "YOUR\_WIFI";
+const char* password = "YOUR\_WIFI\_PASSWORD";
 String serverName = "http://YOUR\_LOCAL\_MACHINE\_IP:5000/stats"; 
 ```
 Y por ultimo sube tu código. 

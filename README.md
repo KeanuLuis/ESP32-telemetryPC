@@ -32,6 +32,8 @@ En seguida de Run esta Interface/Port ***asegurate que por predeteminado este el
 
 
 <img width="324" height="307" alt="image" src="https://github.com/user-attachments/assets/1384a55a-3fe3-4e4c-bfab-84653594c44a" />
+
+
 <img width="255" height="24" alt="image" src="https://github.com/user-attachments/assets/a6e74e29-3e2a-4848-9d1b-49f3218ac963" />
 
 
@@ -49,33 +51,52 @@ Nota: Si el comando anterior te da error, intenta usar
 ### FASE 2 Hardware y conexiones.
 
 ***La siguiente imagen solo es un ejemplo ilustrativo de como deben de ser las conexiones y en que pines***
+
+
 <img width="971" height="599" alt="diagrama" src="https://github.com/user-attachments/assets/cf70c265-ad59-4861-b1f2-01c48badfe34" />
 
+
 Una vez realizado lo anterior es abrir el software de arduino y decargar la placa esp32-c3 mini, para ello dirigete hacia placas y busca esp32 by Espressif.
+
+
 <img width="207" height="398" alt="image" src="https://github.com/user-attachments/assets/33a79a4d-4387-421d-84be-82aebf8bd60d" />
 
+
 Lo que sigue es, descargada la placa solo es seleccionarla en la seccion de herramientas de la siguiente manera.
+
+
 <img width="864" height="306" alt="image" src="https://github.com/user-attachments/assets/16830d47-8156-4118-a3f1-669bbc342b08" />
 
 
 Y por ultimo las librerias, ve a Programa > Incluir Librería > Administrar Bibliotecas... e instala las siguientes librerías exactas
 
+
 `Adafruit GFX Library`
+
 
 <img width="220" height="308" alt="image" src="https://github.com/user-attachments/assets/42365a99-1803-4c3e-a15b-45da2ed2f78d" />
 
+
 `Adafruit SSD1306`
+
 
 <img width="212" height="314" alt="image" src="https://github.com/user-attachments/assets/bf0ee4b5-37a1-4e62-bb50-0c043a331999" />
 
+
 `ArduinoJson` 
 
+
 ***Asegúrate de que sea la versión 7 o superior***
+
+
 <img width="200" height="307" alt="image" src="https://github.com/user-attachments/assets/8be5f234-14a8-482e-b0f5-0590c74b5646" />
+
 
 `WiFiManager`
 
+
 <img width="208" height="321" alt="image" src="https://github.com/user-attachments/assets/d93d3485-c168-40a2-8a0b-e92ef3fc97d1" />
+
 
 ### FASE 3 Final.
 
@@ -102,25 +123,33 @@ para ver cual es la IPv4 es con el siguiente comando en CMD
 
 ### Imagenes del resultado y funcionamiento. 
 
+
 <img width="1536" height="1536" alt="image" src="https://github.com/user-attachments/assets/5196973c-a89a-46fb-a0bf-acb3b86d9a65" />
+
 
 <img width="1536" height="1536" alt="image" src="https://github.com/user-attachments/assets/19827777-a522-4a90-9642-433f836d6122" />
 
+
 <ins> Pantalla de Temperaturas </ins>
+
+
 <img width="1536" height="1536" alt="image" src="https://github.com/user-attachments/assets/27dc4a77-c3fd-424b-b57a-23ba878b4598" />
 
+
 <ins> Pantalla de porcentaje </ins>
+
+
 <img width="1536" height="1536" alt="image" src="https://github.com/user-attachments/assets/aaccfbf2-74b2-4a58-9a9e-26d8df9958c0" />
 
+
 <ins> Pantalla de Disco </ins>
+
+
 <img width="1536" height="1536" alt="image" src="https://github.com/user-attachments/assets/7c366e61-4a99-481a-9591-5d3ec0a0d48c" />
 
+
 <ins> Pantalla de Tiempo de ejecución de PC </ins>
+
+
 <img width="1536" height="1536" alt="image" src="https://github.com/user-attachments/assets/a3fdeca1-5ba8-4b79-b9ff-7d3e47827e62" />
-
-
-
-
-
-
 

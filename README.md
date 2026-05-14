@@ -17,14 +17,24 @@ Desgargar este software es muy importe ya que este sera el encargado de suminist
 
 Una ves que se haya descargado LHM, es necesario ejecutarlo con los permisos de administrador.
 Asegúrate de marcar las siguientes opciones para que el programa se inicie junto con Windows y minimizado.
+
+
 <img width="225" height="280" alt="image" src="https://github.com/user-attachments/assets/4c90ef85-6c41-49e7-8cf2-da9c53fcc2cf" />
 
 En esa misma sección de opciones, asegúrate de seleccionar la pestaña  ***Remote Web Server y, ahí, la opción Run.*** 
 La imagen siguiente ilustra lo deseado. 
+
+
 <img width="300" height="305" alt="image" src="https://github.com/user-attachments/assets/3ccdf9bb-3475-48be-9539-1f350d1087d4" />
+
+
 En seguida de Run esta Interface/Port ***asegurate que por predeteminado este el puerto 8085**
+
+
 <img width="324" height="307" alt="image" src="https://github.com/user-attachments/assets/1384a55a-3fe3-4e4c-bfab-84653594c44a" />
 <img width="255" height="24" alt="image" src="https://github.com/user-attachments/assets/a6e74e29-3e2a-4848-9d1b-49f3218ac963" />
+
+
 
 ***Es importante asegurarse que el pueto 8085 no este ocupado por alguna otra razon ya que es importante para el script que ese puerto este sin usarse***
 
